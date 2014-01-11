@@ -4,15 +4,21 @@
     "description": "Spresso theme for Spress",
     "keywords": ["spress", "theme", "template"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Puertas",
+            "email": "vpgugr@gmail.com",
+            "homepage": "http://yosymfony.com"
+        }
+    ],
     "require": {
-        "yosymfony/spress-installer": ">=1.0",
-        "yosymfony/spress-plugin-dataloader": "1.0.*"
+        "yosymfony/spress-installer": "~1.0",
+        "yosymfony/spress-plugin-dataloader": "~1.0"
     },
     "extra": {
         "spress_name": "spresso",
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
