@@ -1,0 +1,17 @@
+{
+    "name": "yosymfony/spress-theme-spresso",
+    "type": "spress-theme",
+    "description": "Spresso theme for Spress",
+    "keywords": ["spress", "theme", "template"],
+    "license": "MIT",
+    "require": {
+        
+    },
+    "extra": {
+        "spress_name": "spresso",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
