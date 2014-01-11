@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "yosymfony/spress-installer": ">=1.0",
-        "yosymfony/spress-plugin-dataloader": ">=1.0"
+        "yosymfony/spress-plugin-dataloader": "1.0.*@dev"
     },
     "extra": {
         "spress_name": "spresso",
