@@ -5,7 +5,8 @@
     "keywords": ["spress", "theme", "template"],
     "license": "MIT",
     "require": {
-        "yosymfony/spress-installer": ">=1.0"
+        "yosymfony/spress-installer": ">=1.0",
+        "yosymfony/spress-plugin-dataloader": ">=1.0"
     },
     "extra": {
         "spress_name": "spresso",
