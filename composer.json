@@ -16,7 +16,7 @@
     },
     "config": {
         "vendor-dir": "_plugins/vendors"
-    }
+    },
     "extra": {
         "spress_name": "spresso",
         "branch-alias": {
