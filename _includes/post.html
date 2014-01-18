@@ -7,19 +7,31 @@
     
     {{ post.content }}
     
+    {% if isPostLayout %}
     <footer>    
         <p>
         	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
         </p>
+        <ul class="list-unstyled">
+            <li>
+                <i class="fa fa-tags"></i>
+                {{ post.tags | join(', ') }}
+            </li>
+            <li>
+                <i class="fa fa-folder"></i>
+                {{ post.categories | join(', ') }}
+            </li>
+        </ul>
     </footer>
+    {% endif %}
     
-    {% if isPostLayout and post.disqus_comments %}
-        <section>
-            <h3>Comments</h3>
-            <div id="disqus_thread"></div>
-            <noscript>Please enable JavaScript to view the
-                <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
-            </noscript>
-        </section>
+    {% if isPostLayout and post.comments %}
+    <section>
+        <h3>Comments</h3>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the
+            <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
+        </noscript>
+    </section>
     {% endif %}
 </article>
