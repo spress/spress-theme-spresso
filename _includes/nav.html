@@ -12,13 +12,11 @@
         </div>
       </div>
       <div class="collapse navbar-collapse">
+        {% if site.top_menu | length > 0 %}
         <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-        </ul>
-        
-        {% if site.author.twitter %}
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></li>
+            {% for link in site.top_menu %}
+            <li class="active"><a href="{{ link.url }}">{{ link.name }}</a></li>
+            {% endfor %}
         </ul>
         {% endif %}
       </div><!--/.nav-collapse -->
