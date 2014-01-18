@@ -12,13 +12,7 @@
         </div>
       </div>
       <div class="collapse navbar-collapse">
-        {% if site.top_menu | length > 0 %}
-        <ul class="nav navbar-nav">
-            {% for link in site.top_menu %}
-            <li class="active"><a href="{{ link.url }}">{{ link.name }}</a></li>
-            {% endfor %}
-        </ul>
-        {% endif %}
+        {% include 'menu.html' with { menu: site.top_menu, ul_style: 'nav navbar-nav' } %}
       </div><!--/.nav-collapse -->
     </div>
 </div>
