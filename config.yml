@@ -9,4 +9,15 @@ exclude: ['README.md', 'LICENSE','composer.json']
 
 author:
     name: Your Name
-    twitter: '' # Only your username without '@'
+
+top_menu:
+    - { name: Home, url: / }
+    
+bottom_menu:
+    - { name: Spresso theme, url: https://github.com/yosymfony/Spress-theme-spresso }
+
+social_network:
+    twitter: # Only your username without '@'
+    github:
+    facebook:
+    gplus:
