@@ -1,23 +1,24 @@
-# Site configuration
-
 title: "Welcome to Spress"
 description: "A site creted by Spress"
 
-paginate: 5
-
-exclude: ['README.md', 'LICENSE','composer.json']
-
 author:
     name: Your Name
+    twitter: spress_cms
+    github: https://github.com/yosymfony/Spress
+    facebook:
+    gplus: https://google.com/+Yosymfony
 
+# Site validation
+google_verify:
+bing_verify:
+
+# Page menus
 top_menu:
     - { name: Home, url: / }
     
 bottom_menu:
     - { name: Spresso theme, url: https://github.com/yosymfony/Spress-theme-spresso }
+    
+paginate: 5
 
-social_network:
-    twitter: # Only your username without '@'
-    github:
-    facebook:
-    gplus:
+exclude: ['README.md', 'LICENSE','composer.json']
