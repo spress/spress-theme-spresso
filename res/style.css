@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
@@ -18,6 +17,10 @@ body {
 
 #wrap > .container {
   padding: 60px 15px 0;
+}
+
+.post footer {
+    margin-top: 20px;
 }
 
 #footer {
