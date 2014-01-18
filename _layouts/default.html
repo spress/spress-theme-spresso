@@ -1,15 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ page.description | default(site.description) }}">
-        <meta name="author" content="{{ site.author.name }}">
-        <title>{{ page.title | default(site.title) }}</title>
-        {% block meta %}{% endblock %}
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <link href="/res/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-        <link href="/res/style.css" rel="stylesheet" media="screen">
+        {% include 'head.html' %}
     </head>
     <body>
         <div id="wrap">
@@ -25,48 +17,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        {% if site.top_menu | length > 0 %}
-                        <ul class="list-inline">
-                            {% for link in site.bottom_menu %}
-                            <li><a href="{{ link.url }}">{{ link.name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                        {% endif %}
+                        {% include 'menu.html' with { menu: site.bottom_menu } %}
                     </div>
                     <div class="col-md-6 text-right">
-                        <ul class="list-inline">
-                            {% if site.social_network.github %}
-                            <li>
-                                <a href="{{ site.social_network.github }}">
-                                    <i class="fa fa-github fa-2x"></i>
-                                </a>
-                            </li>
-                            {% endif %}
-                            
-                            {% if site.social_network.facebook %}
-                            <li>
-                                <a href="{{ site.social_network.facebook }}">
-                                    <i class="fa fa-facebook-square fa-2x"></i>
-                                </a>
-                            </li>
-                            {% endif %}
-                            
-                            {% if site.social_network.gplus %}
-                            <li>
-                                <a href="{{ site.social_network.gplus }}">
-                                    <i class="fa fa-facebook-square fa-2x"></i>
-                                </a>
-                            </li>
-                            {% endif %}
-                            
-                            {% if site.social_network.twitter %}
-                            <li>
-                                <a href="https://twitter.com/{{ site.social_network.twitter }}">
-                                    <i class="fa fa-twitter fa-2x"></i>
-                                </a>
-                            </li>
-                            {% endif %}
-                        </ul>
+                        {% include 'social-network.html' %}
                     </div>
                 </div>
                 <p class="text-center">
