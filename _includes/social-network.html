@@ -1,8 +1,8 @@
 <ul class="list-inline">
-    {% if site.author.github %}
+    {% if site.author.twitter %}
     <li>
-        <a href="{{ site.author.github }}">
-            <i class="fa fa-github fa-2x"></i>
+        <a href="https://twitter.com/{{ site.author.twitter }}">
+            <i class="fa fa-twitter fa-2x"></i>
         </a>
     </li>
     {% endif %}
@@ -15,6 +15,14 @@
     </li>
     {% endif %}
     
+    {% if site.author.linkedin %}
+    <li>
+        <a href="{{ site.author.linkedin }}">
+            <i class="fa fa-linkedin-square fa-2x"></i>
+        </a>
+    </li>
+    {% endif %}
+    
     {% if site.author.gplus %}
     <li>
         <a href="{{ site.author.gplus }}">
@@ -23,10 +31,26 @@
     </li>
     {% endif %}
     
-    {% if site.author.twitter %}
+    {% if site.author.github %}
     <li>
-        <a href="https://twitter.com/{{ site.author.twitter }}">
-            <i class="fa fa-twitter fa-2x"></i>
+        <a href="{{ site.author.github }}">
+            <i class="fa fa-github fa-2x"></i>
+        </a>
+    </li>
+    {% endif %}
+    
+    {% if site.author.bitbucket %}
+    <li>
+        <a href="{{ site.author.bitbucket }}">
+            <i class="fa fa-bitbucket fa-2x"></i>
+        </a>
+    </li>
+    {% endif %}
+    
+    {% if site.author.youtube %}
+    <li>
+        <a href="https://twitter.com/{{ site.author.youtube }}">
+            <i class="fa fa-youtube fa-2x"></i>
         </a>
     </li>
     {% endif %}
