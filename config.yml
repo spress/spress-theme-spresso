@@ -2,7 +2,8 @@ title: "Welcome to Spress"
 description: "A site creted by Spress"
 logo: spresso-logo.png
 
-url: http://devi-vm.local:8080
+# Your site's domain. E.g: http://yoursite.com
+url: http://localhost:8080
 
 # Information about author
 author:
@@ -11,8 +12,15 @@ author:
     # Social networks
     twitter: spress_cms
     github: https://github.com/yosymfony/Spress
+    bitbucket:
     facebook:
-    gplus: https://google.com/+Yosymfony
+    linkedin:
+    gplus:
+    youtube:
+    
+# Facebook Open Graph
+open_graph:
+    locale: en_US
 
 # Site validation
 google_verify:
