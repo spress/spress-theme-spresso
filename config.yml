@@ -1,8 +1,14 @@
 title: "Welcome to Spress"
 description: "A site creted by Spress"
+logo: spresso-logo.png
 
+url: http://devi-vm.local:8080
+
+# Information about author
 author:
     name: Your Name
+    
+    # Social networks
     twitter: spress_cms
     github: https://github.com/yosymfony/Spress
     facebook:
@@ -17,7 +23,7 @@ top_menu:
     - { name: Home, url: / }
     
 bottom_menu:
-    - { name: Spresso theme, url: https://github.com/yosymfony/Spress-theme-spresso }
+    - { name: Go to Spresso theme web, url: https://github.com/yosymfony/Spress-theme-spresso }
     
 paginate: 5
 
