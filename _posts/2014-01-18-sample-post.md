@@ -6,7 +6,6 @@ categories: [articles]
 tags: [sample post, posts]
 comments: true
 ---
-
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
 # Heading 1
@@ -61,9 +60,7 @@ HTML and <abbr title="cascading stylesheets">CSS<abbr> are our tools. Mauris a a
 
 ## Code Snippets
 
-Syntax highlighting via Pygments
-
-Non Pygments code example
+Syntax highlighting via [Highlight.js](http://highlightjs.org/):
 
     <div id="awesome">
         <p>This is great isn't it?</p>

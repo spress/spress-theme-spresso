@@ -21,6 +21,10 @@ author:
 # Facebook Open Graph
 open_graph:
     locale: en_US
+    
+# Code highlight for <pre> and <code> tags
+# Powered by http://highlightjs.org/
+code_highlight: true
 
 # Site validation
 google_verify:
