@@ -7,11 +7,11 @@
 {% if site.author.twitter %}
     {% if page.image.feature %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/assets/{{ page.image.feature }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image.feature }}">
     {% else %}
     <meta name="twitter:card" content="summary">
     {% endif %}
-    <meta name="twitter:image" content="{{ site.url }}/assets/{{ page.image.thumbnail | default(site.logo) }}">
+    <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image.thumbnail | default(site.logo) }}">
     <meta name="twitter:title" content="{{ page.title | default(site.title) }}">
     <meta name="twitter:description" content="{{ page.description | default(site.description) }}">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
@@ -25,10 +25,10 @@
 <meta property="og:site_name" content="{{ site.title }}">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/touch-icon-iphone-retina.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/touch-icon-ipad-retina.png">
+<link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/touch-icon-ipad-retina.png">
 
 {% if site.google_verify %}
 <meta name="google-site-verification" content="{{ site.google_verify }}">
@@ -38,5 +38,5 @@
 {% endif %}
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="/assets/style.css" rel="stylesheet" media="screen">
+<link href="/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="/assets/css/style.css" rel="stylesheet" media="screen">
