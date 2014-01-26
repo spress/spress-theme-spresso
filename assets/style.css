@@ -1,26 +1,22 @@
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
-  max-width: 720px;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+    min-height: 100%;
+    max-width: 720px;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
 #wrap > .container {
-  padding: 60px 15px 0;
-}
-
-.post footer {
-    margin-top: 20px;
+    padding: 60px 15px 0;
 }
 
 #footer {
@@ -31,10 +27,48 @@ body {
 }
 
 #footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 code {
-  font-size: 80%;
+    font-size: 80%;
 }
+
+/* Post */
+.post footer {
+    margin-top: 20px;
+}
+/* /Post */
+
+/* Posts list */
+.posts-list
+{
+    list-style: none;
+    margin: 0px 40px 0;
+    padding: 0;
+}
+
+.posts-list-item
+{
+    border-bottom: 1px dotted #303030;
+    margin: 0;
+    position: relative;
+}
+
+.posts-list-item a
+{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    color: #424242;
+    padding: 20px 5px;
+}
+.posts-list-item a:hover
+{
+    background: #FCF5F5;
+    color: #f03838;
+    padding: 20px 12px;
+}
+/* /Posts list */
