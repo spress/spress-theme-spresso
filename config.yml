@@ -6,7 +6,9 @@ logo: spresso-logo.png
 url: http://localhost:8080
 
 # Comments in posts
-comments: true
+comments:
+    enabled: true
+    disqus_shortname: yosymfony
 
 # Information about author
 author:

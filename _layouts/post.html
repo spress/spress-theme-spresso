@@ -13,5 +13,15 @@ layout: default
             window.disqus_identifier = "{{ page.id }}";
         </script>
         <script async src="http://hunch.disqus.com/embed.js"></script>
+        
+        <script type="text/javascript">
+            var disqus_shortname = '{{ site.comments.disqus_shortname }}';
+            
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>   
     {% endif %}
 {% endblock %}
