@@ -34,16 +34,30 @@ and run `composer update`:
 
 `$ spress site:new /your-site-dir spresso`
 
-### Comments
+#### Menus
+
+Spresso support top and bottom menus. To configure, you can edit
+`top_menu` and `bottom_menu` options from the `config.yml`:
+
+```
+top_menu:
+    - { name: Home, url: / }
+    - { name: About, url: /about }
+    
+bottom_menu:
+    - { name: Your link, url: https://your-url }
+```
+
+#### Comments
 
 Comments are powered by [Disqus](disqus.com) and it need your 
 **disqus shortname**. To get it, you need create a account at this service.
 It's free.
 
-#### Disable comments
+##### Disable comments
 
 By default, Disqus comments are enabled. If you want a post without comments, set
-the `comments` variable to false at the Front-matter of the post:
+the `comments` variable to `false` at the Front-matter of the post:
 ```
 ---
 comments: false
