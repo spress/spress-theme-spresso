@@ -5,6 +5,9 @@ logo: spresso-logo.png
 # Your site's domain. E.g: http://yoursite.com
 url: http://localhost:8080
 
+# Comments in posts
+comments: true
+
 # Information about author
 author:
     name: Your Name

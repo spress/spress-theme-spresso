@@ -8,7 +8,7 @@ layout: default
 {% endblock %}
 
 {% block javascript %}
-    {% if page.comments %}
+    {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments) %}
         <script type="text/javascript">
             window.disqus_identifier = "{{ page.id }}";
         </script>

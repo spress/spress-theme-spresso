@@ -1,6 +1,8 @@
 ## Spresso theme
 
-Spresso is the basic theme for [Spress](https://github.com/yosymfony/Spress).
+Spresso is a simple theme for [Spress](https://github.com/yosymfony/Spress) 
+based on Bootstrap 3. The content is organized in one central column.
+Spresso is the basic theme for Spress.
 
 See a [demo](http://yosymfony.github.io/Spress-example/).
 
@@ -31,3 +33,13 @@ and run `composer update`:
 **Create a new site**:
 
 `$ spress site:new /your-site-dir spresso`
+
+### Disable comments
+
+By default, Disqus comments are enabled. If you want a post without comments, set
+the `comments` variable to false at the Front-matter of the post:
+```
+---
+comments: false
+---
+```
