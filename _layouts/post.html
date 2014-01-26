@@ -10,11 +10,6 @@ layout: default
 {% block javascript %}
     {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
         <script type="text/javascript">
-            window.disqus_identifier = "{{ page.id }}";
-        </script>
-        <script async src="http://hunch.disqus.com/embed.js"></script>
-        
-        <script type="text/javascript">
             var disqus_shortname = '{{ site.comments.disqus_shortname }}';
             
             (function() {
