@@ -12,6 +12,8 @@ See a [demo](http://yosymfony.github.io/Spress-example/).
 * Top and bottom menu.
 * Social networks link at the footer.
 * Support to Google and Bing site validation.
+* Code snippets highlight.
+* Sitemap and RSS feed.
 
 ### How to install?
 
