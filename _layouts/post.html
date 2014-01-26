@@ -8,7 +8,7 @@ layout: default
 {% endblock %}
 
 {% block javascript %}
-    {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments) %}
+    {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
         <script type="text/javascript">
             window.disqus_identifier = "{{ page.id }}";
         </script>
@@ -22,6 +22,6 @@ layout: default
                 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
             })();
-        </script>   
+        </script>
     {% endif %}
 {% endblock %}
