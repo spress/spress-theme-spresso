@@ -17,6 +17,10 @@ author:
     linkedin:
     gplus:
     youtube:
+
+# RSS feed
+feed:
+    max_item: 10
     
 # Facebook Open Graph
 open_graph:
