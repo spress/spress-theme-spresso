@@ -12,16 +12,23 @@
         <p>
         	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
         </p>
+        
+        {% if post.categories | length > 0 or post.tags | length > 0 %}
         <ul class="list-unstyled">
-            <li>
-                <i class="fa fa-tags"></i>
-                {{ post.tags | join(', ') }}
-            </li>
-            <li>
-                <i class="fa fa-folder"></i>
-                {{ post.categories | join(', ') }}
-            </li>
+            {% if post.tags | length > 0 %}
+                <li>
+                    <i class="fa fa-tags"></i>
+                    {{ post.tags | join(', ') }}
+                </li>
+            {% endif %}
+            {% if post.categories | length > 0 %}
+                <li>
+                    <i class="fa fa-folder"></i>
+                    {{ post.categories | join(', ') }}
+                </li>
+            {% endif %}
         </ul>
+        {% endif %}
     </footer>
     {% endif %}
     
