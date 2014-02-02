@@ -24,12 +24,12 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
-<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} Feed">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/assets/img/touch-icon-iphone.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/touch-icon-ipad.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/touch-icon-iphone-retina.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/touch-icon-ipad-retina.png">
+<link href="{{ site.url }}/rss.xml" type="application/rss+xml" rel="alternate" title="{{ site.title }} Feed">
+<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
+<link rel="apple-touch-icon" href="{{ site.url }}/assets/img/touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/assets/img/touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/assets/img/touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/assets/img/touch-icon-ipad-retina.png">
 
 {% if site.google_verify %}
 <meta name="google-site-verification" content="{{ site.google_verify }}">
@@ -39,8 +39,8 @@
 {% endif %}
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href="/assets/css/bootstrap.css" rel="stylesheet" media="screen">
-<link href="/assets/css/style.css" rel="stylesheet" media="screen">
+<link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" media="screen">
 
 {% if site.code_highlight %}
 <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">

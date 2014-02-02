@@ -27,7 +27,7 @@ title: Welcome
     <ul class="pagination">
 		{% if paginator.previous_page %}
 			<li>
-                <a class="prev" href="/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}">
+                <a class="prev" href="{{ site.url }}/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}">
                     &laquo; Newer
                 </a>
             </li>
@@ -37,12 +37,12 @@ title: Welcome
 			{% if page == paginator.page %}
 				<li><span class="active">{{ page }}</span></li>
 			{% else %}
-				<li><a href="/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
+				<li><a href="{{ site.url }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
 			{% endif %}
 		{% endfor %}
 
 		{% if paginator.next_page %}
-			<li><a href="/page{{ paginator.next_page }}/">Older &raquo;</a></li>
+			<li><a href="{{ site.url }}/page{{ paginator.next_page }}/">Older &raquo;</a></li>
 		{% endif %}
 	</ul>
 {% endif %}
