@@ -43,6 +43,9 @@ Spresso support top and bottom menus. To configure, you can edit
 top_menu:
     - { name: Home, url: / }
     - { name: About, url: /about }
+
+    # To generate a absolute URL using site.url value:
+    - { name: Docs, url: /docs, site_url: true}
     
 bottom_menu:
     - { name: Your link, url: https://your-url }
