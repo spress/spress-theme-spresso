@@ -1,7 +1,9 @@
 {% if menu | length > 0 %}
 <ul class="{{ ul_style | default('list-inline') }}">
     {% for link in menu %}
-    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+    <li><a href="{% if link.site_url == true %}{{ site.url }}{% endif %}{{ link.url }}">
+        {{ link.name }}</a>
+    </li>
     {% endfor %}
 </ul>
 {% endif %}
