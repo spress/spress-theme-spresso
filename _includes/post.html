@@ -4,15 +4,16 @@
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
         </h1>
     </header>
-    
-    {{ post.content }}
-    
+
     {% if isPostLayout %}
-    <footer>    
+
+    {{ post.content }}
+
+    <footer>
         <p>
-        	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
+            Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
         </p>
-        
+
         {% if post.categories | length > 0 or post.tags | length > 0 %}
         <ul class="list-unstyled">
             {% if post.tags | length > 0 %}
@@ -30,8 +31,13 @@
         </ul>
         {% endif %}
     </footer>
+    {% else %}
+        {{ post.content|striptags|length > site.post_teaser ? post.content|striptags|slice(0, site.post_teaser) ~ '...' : post.content|striptags }}
+        <p class='alignright'>
+            <a href="{{ site.url }}{{ post.url }}">Read More</a>
+        </p>
     {% endif %}
-    
+
     {% if isPostLayout %}
         {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
             <section>
@@ -40,7 +46,7 @@
                 <noscript>
                     Please enable JavaScript to view the
                     <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-                </noscript> 
+                </noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
             </section>
         {% endif %}
