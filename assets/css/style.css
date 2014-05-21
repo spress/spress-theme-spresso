@@ -71,4 +71,9 @@ code {
     color: #f03838;
     padding: 20px 12px;
 }
+
+/* Used in post Read More */
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
 /* /Posts list */
