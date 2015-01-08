@@ -8,7 +8,7 @@ url: http://localhost:8080
 # Comments in posts
 comments:
     enabled: true
-    disqus_shortname: 
+    disqus_shortname:
 
 # Information about author
 author:
