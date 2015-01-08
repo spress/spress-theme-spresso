@@ -13,10 +13,10 @@ comments:
 # Information about author
 author:
     name: Your Name
-    
+
     # Social networks
     twitter: spress_cms
-    github: https://github.com/yosymfony/Spress
+    github: https://github.com/spress/Spress
     bitbucket:
     facebook:
     linkedin:
@@ -26,11 +26,11 @@ author:
 # RSS feed
 feed:
     max_item: 10
-    
+
 # Facebook Open Graph
 open_graph:
     locale: en_US
-    
+
 # Code highlight for <pre> and <code> tags
 # Powered by http://highlightjs.org/
 code_highlight: true
@@ -42,10 +42,10 @@ bing_verify:
 # Page menus
 top_menu:
     - { name: Home, url: / }
-    
+
 bottom_menu:
     - { name: Go to Spresso theme web, url: https://github.com/yosymfony/Spress-theme-spresso }
-    
+
 paginate: 5
 
 exclude: ['README.md', 'LICENSE','composer.json']
