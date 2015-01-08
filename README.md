@@ -15,6 +15,7 @@ See a [demo](http://yosymfony.github.io/Spress-example/).
 * Social networks link at the footer.
 * Support to Google and Bing site validation.
 * Code snippets highlight.
+* Iconic font by [Fort Awesome](http://fortawesome.github.io/Font-Awesome).
 * Sitemap and RSS feed.
 
 ### How to install?
@@ -24,7 +25,7 @@ and run `composer update`:
 
 ```
 "require": {
-    "yosymfony/spress-theme-spresso": ">=1.0,<2.0-dev",
+    "yosymfony/spress-theme-spresso": "1.1.*@dev"
 }
 ```
 
@@ -32,7 +33,7 @@ and run `composer update`:
 
 **Create a new site**:
 
-`$ spress site:new /your-site-dir spresso`
+`$ spress new:site /your-site-dir spresso`
 
 #### Menus
 
