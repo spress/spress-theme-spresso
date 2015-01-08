@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "yosymfony/spress-installer": ">=1.0,<2.0"
+        "yosymfony/spress-installer": "1.1.*@dev"
     },
     "config": {
         "vendor-dir": "_plugins/vendors"
@@ -20,7 +20,7 @@
     "extra": {
         "spress_name": "spresso",
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }
