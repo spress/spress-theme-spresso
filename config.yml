@@ -3,7 +3,7 @@ description: "A site creted by Spress"
 logo: spresso-logo.png
 
 # Your site's domain. E.g: http://yoursite.com
-url: http://localhost:8080
+url: ""
 
 # Comments in posts
 comments:
