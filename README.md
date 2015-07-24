@@ -1,6 +1,6 @@
 ## Spresso theme
 
-Spresso is a simple theme for [Spress](https://github.com/yosymfony/Spress) 
+Spresso is a simple theme for **[Spress 2.0](http://spress.yosymfony.com)** 
 based on Bootstrap 3. The content is organized in one central column.
 Spresso is the basic theme for Spress.
 
@@ -25,7 +25,7 @@ and run `composer update`:
 
 ```
 "require": {
-    "yosymfony/spress-theme-spresso": "1.1.*@dev"
+    "yosymfony/spress-theme-spresso": "2.0.*@dev"
 }
 ```
 
