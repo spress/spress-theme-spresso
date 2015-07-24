@@ -1,48 +1,54 @@
 ---
 layout: page
 title: Welcome
+generator: pagination
+provider: 'site.posts'
+max_page: 1
+mode: list
 ---
-{% if site.paginate > 0 %}
-    {% for post in paginator.posts %}
+{% if page.mode == 'list' %}
+    <div class="page-header">
+        <h1>Blog <small>posts</small></h1>
+    </div>
+    {% include "posts-list.html" with { posts: site.posts } %}
+
+    {% if site.posts | length < 1 %}
+        <p>Until now, there is no posts. :(</p>
+    {% endif %}
+{% else %}
+    {% for post in page.pagination.items %}
         {% include "post.html" %}
     {% endfor %}
     
-    {% if paginator.posts | length < 1 %}
+    {% if page.pagination.items | length < 1 %}
         <div class="page-header">
           <h1>Welcome <small>to the blog</small></h1>
         </div>
         <p>Until now, there is no posts. :(</p>
     {% endif %}
-{% else %}
-    <div class="page-header">
-        <h1>Blog <small>posts</small></h1>
-    </div>
-    {% include "posts-list.html" with { posts: site.posts } %}
-    {% if site.posts | length < 1 %}
-        <p>Until now, there is no posts. :(</p>
-    {% endif %}
+
 {% endif %}
 
-{% if paginator.total_pages > 1 %}
+{% if page.pagination.total_pages > 1 %}
     <ul class="pagination">
-		{% if paginator.previous_page %}
+		{% if page.pagination.previous_page %}
 			<li>
-                <a class="prev" href="{{ site.url }}/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}">
+                <a class="prev" href="{{ site.url }}/{%if page.pagination.previous_page > 1 %}page{{ page.pagination.previous_page }}/{% endif %}">
                     &laquo; Newer
                 </a>
             </li>
 		{% endif %}
 
-		{% for page in (1..paginator.total_pages) %}
-			{% if page == paginator.page %}
+		{% for page in (1..page.pagination.total_pages) %}
+			{% if page == page.pagination.page %}
 				<li><span class="active">{{ page }}</span></li>
 			{% else %}
 				<li><a href="{{ site.url }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
 			{% endif %}
 		{% endfor %}
 
-		{% if paginator.next_page %}
-			<li><a href="{{ site.url }}/page{{ paginator.next_page }}/">Older &raquo;</a></li>
+		{% if page.pagination.next_page %}
+			<li><a href="{{ site.url }}/page{{ page.pagination.next_page }}/">Older &raquo;</a></li>
 		{% endif %}
 	</ul>
 {% endif %}
