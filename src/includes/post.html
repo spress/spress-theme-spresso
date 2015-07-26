@@ -1,11 +1,11 @@
 <article class="post">
     <header>
         <h1>
-            <a href="{{ site.posts[post.id].url }}">{{ post.title }}</a>
+            <a href="{{ post.url }}">{{ post.title }}</a>
         </h1>
     </header>
     
-    {{ site.posts[post.id].content }}
+    {{ post.content }}
     
     {% if isPostLayout %}
     <footer>    
