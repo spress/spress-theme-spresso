@@ -8,31 +8,29 @@
     {{ post.content }}
     
     {% if isPostLayout %}
-    <footer>    
-        <p>
-        	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
-        </p>
-        
-        {% if post.categories | length > 0 or post.tags | length > 0 %}
-        <ul class="list-unstyled">
-            {% if post.tags | length > 0 %}
-                <li>
-                    <i class="fa fa-tags"></i>
-                    {{ post.tags | join(', ') }}
-                </li>
+        <footer>    
+            <p>
+            	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
+            </p>
+            
+            {% if post.categories | length > 0 or post.tags | length > 0 %}
+            <ul class="list-unstyled">
+                {% if post.tags | length > 0 %}
+                    <li>
+                        <i class="fa fa-tags"></i>
+                        {{ post.tags | join(', ') }}
+                    </li>
+                {% endif %}
+                {% if post.categories | length > 0 %}
+                    <li>
+                        <i class="fa fa-folder"></i>
+                        {{ post.categories | join(', ') }}
+                    </li>
+                {% endif %}
+            </ul>
             {% endif %}
-            {% if post.categories | length > 0 %}
-                <li>
-                    <i class="fa fa-folder"></i>
-                    {{ post.categories | join(', ') }}
-                </li>
-            {% endif %}
-        </ul>
-        {% endif %}
-    </footer>
-    {% endif %}
-    
-    {% if isPostLayout %}
+        </footer>
+
         {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
             <section>
                 <h3>Comments</h3>
