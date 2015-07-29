@@ -7,10 +7,10 @@
 
 {% if site.author.twitter %}
     {% if page.image.feature %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image.feature }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image.feature }}">
     {% else %}
-    <meta name="twitter:card" content="summary">
+        <meta name="twitter:card" content="summary">
     {% endif %}
     <meta name="twitter:image" content="{{ site.url }}/assets/img/{{ page.image.thumbnail | default(site.logo) }}">
     <meta name="twitter:title" content="{{ page.title | default(site.title) }}">
@@ -33,10 +33,10 @@
 <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/assets/img/touch-icon-ipad-retina.png">
 
 {% if site.google_verify %}
-<meta name="google-site-verification" content="{{ site.google_verify }}">
+    <meta name="google-site-verification" content="{{ site.google_verify }}">
 {% endif %}
 {% if site.bing_verify %}
-<meta name="msvalidate.01" content="{{ site.bing_verify }}">
+    <meta name="msvalidate.01" content="{{ site.bing_verify }}">
 {% endif %}
 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -44,5 +44,5 @@
 <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet" media="screen">
 
 {% if site.code_highlight %}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 {% endif %}
