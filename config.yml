@@ -23,6 +23,14 @@ author:
     gplus:
     youtube:
 
+# Collections
+collections:
+  posts:
+    output: true
+
+  projects:
+    output: true
+
 # RSS feed
 feed:
     max_item: 10

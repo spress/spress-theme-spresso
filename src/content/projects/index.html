@@ -1,0 +1,18 @@
+---
+layout: page
+title: 'Projects'
+generator: pagination
+provider: 'site.projects'
+max_page: 1
+list_mode: false
+---
+{% for post in page.pagination.items %}
+        {% include "post.html" %}
+    {% else %}
+        <div class="page-header">
+          <h1>Welcome <small>to the blog</small></h1>
+        </div>
+        <p>Until now, there is no posts. :(</p>
+    {% endfor %}
+
+{% include "paginator.html" %}
