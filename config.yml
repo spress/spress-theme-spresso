@@ -50,6 +50,7 @@ bing_verify:
 # Page menus
 top_menu:
     - { name: Home, url: / }
+    - { name: Projects, url: /projects }
 
 bottom_menu:
     - { name: Go to Spresso theme web, url: https://github.com/yosymfony/Spress-theme-spresso }
