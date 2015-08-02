@@ -4,7 +4,8 @@ body {
 }
 
 .spresso-wrap {
-    width: 770px;
+    max-width: 770px;
+    min-height: 100%;
     padding: 60px 15px 0;
 }
 
