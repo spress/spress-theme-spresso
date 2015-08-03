@@ -1,4 +1,4 @@
-{% if page.pagination.total_pages %}
+{% if page.pagination.total_pages > 1 %}
     <ul class="pagination">
 		{% if page.pagination.previous_page %}
 			<li>
@@ -7,14 +7,6 @@
                 </a>
             </li>
 		{% endif %}
-
-		{% for pageNum in (1..page.pagination.total_pages) %}
-			{% if pageNum == page.pagination.page %}
-				<li><span class="active">{{ pageNum }}</span></li>
-			{% else %}
-				<li><a href="{{ site.url }}/{%if pageNum > 1 %}page{{ pageNum }}/{% endif %}">{{ pageNum }}</a></li>
-			{% endif %}
-		{% endfor %}
 
 		{% if page.pagination.next_page %}
 			<li><a href="{{ site.url }}{{ page.pagination.next_page_url }}">Older &raquo;</a></li>
