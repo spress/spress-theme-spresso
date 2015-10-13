@@ -12,19 +12,23 @@
             <p>
             	Posted by {{ site.author.name }} on <time pubdate="pubdate">{{ post.date | date('Y-m-d') }}</time>
             </p>
-            
-            {% if post.categories | length > 0 or post.tags | length > 0 %}
+
+            {% if post.terms_url.tags | length > 0 or post.terms_url.categories | length > 0 %}
             <ul class="list-unstyled">
-                {% if post.tags | length > 0 %}
+                {% if post.terms_url.tags | length > 0 %}
                     <li>
                         <i class="fa fa-tags"></i>
-                        {{ post.tags | join(', ') }}
+                        {% for tag, url in post.terms_url.tags %}
+                            <a href="{{ site.url }}{{ url }}">{{ tag }}</a>{% if loop.last == false %},{% endif %} 
+                        {% endfor %}
                     </li>
                 {% endif %}
-                {% if post.categories | length > 0 %}
+                {% if post.terms_url.categories | length > 0 %}
                     <li>
                         <i class="fa fa-folder"></i>
-                        {{ post.categories | join(', ') }}
+                        {% for category, url in post.terms_url.categories %}
+                            <a href="{{ site.url }}{{ url }}">{{ category }}</a>{% if loop.last == false %},{% endif %} 
+                        {% endfor %}
                     </li>
                 {% endif %}
             </ul>
