@@ -5,6 +5,8 @@ logo: spresso-logo.png
 # Your site's domain. E.g: http://yoursite.com
 url: ""
 
+parsedown_actived: true
+
 # Comments in posts
 comments:
     enabled: true
@@ -12,7 +14,7 @@ comments:
 
 # Information about author
 author:
-    name: Your Name
+    name: "Your Name"
 
     # Social networks
     twitter: spress_cms
@@ -54,7 +56,3 @@ top_menu:
 
 bottom_menu:
     - { name: Go to Spresso theme web, url: https://github.com/yosymfony/Spress-theme-spresso }
-
-paginate: 5
-
-exclude: ['README.md', 'LICENSE','composer.json']
