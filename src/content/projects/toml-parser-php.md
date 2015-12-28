@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "page"
 title: "Toml parser for PHP"
 description: "A PHP parser for TOML compatible with TOML v0.4.0."
 ---

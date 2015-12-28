@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "page"
 title: "HttpServer"
 description: "A simple HTTP server for PHP."
 ---

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "page"
 title: "Config loader"
 description: "Provides a loader for YAML, TOML and JSON configuration files."
 ---

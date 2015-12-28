@@ -1,9 +1,9 @@
 ---
-layout: post
-title: Sample Post
-description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-categories: [articles]
-tags: [sample post, posts]
+layout: "post"
+title: "Sample Post"
+description: "Just about everything you'll need to style in the theme"
+categories: ["articles"]
+tags: ["sample post", "posts"]
 ---
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
