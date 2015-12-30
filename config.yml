@@ -1,6 +1,6 @@
 title: "Welcome to Spress"
 description: "A site creted by Spress"
-logo: spresso-logo.png
+logo: "spresso-logo.png"
 
 # Your site's domain. E.g: http://yoursite.com
 url: ""
@@ -9,16 +9,16 @@ parsedown_actived: true
 
 # Comments in posts
 comments:
-    enabled: true
-    disqus_shortname:
+    enabled: false
+    disqus_shortname: ""
 
 # Information about author
 author:
     name: "Your Name"
 
     # Social networks
-    twitter: spress_cms
-    github: https://github.com/spress/Spress
+    twitter: "spress_cms"
+    github: "https://github.com/spress/Spress"
     bitbucket:
     facebook:
     linkedin:
@@ -39,7 +39,7 @@ feed:
 
 # Facebook Open Graph
 open_graph:
-    locale: en_US
+    locale: "en_US"
 
 # Code highlight for <pre> and <code> tags
 # Powered by http://highlightjs.org/
@@ -51,8 +51,8 @@ bing_verify:
 
 # Page menus
 top_menu:
-    - { name: Home, url: / }
-    - { name: Projects, url: /projects }
+    - { name: Home, url: "/" }
+    - { name: Projects, url: "/projects" }
 
 bottom_menu:
-    - { name: Go to Spresso theme web, url: https://github.com/yosymfony/Spress-theme-spresso }
+    - { name: "Go to Spresso theme web", url: "https://github.com/yosymfony/Spress-theme-spresso" }
