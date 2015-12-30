@@ -8,7 +8,7 @@ See a [demo](http://yosymfony.github.io/Spress-example/).
 
 **This theme requires Spress >= 2.0**. If you are using Spress 1.x, go to [1.1.1](https://github.com/yosymfony/Spress-theme-spresso/releases/tag/v1.1.1) version of the theme.
 
-### Featured:
+### Features:
 
 * Responsive design: Support to mobile and tablets.
 * Disqus comments on your posts.
