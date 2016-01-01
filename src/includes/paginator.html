@@ -1,0 +1,15 @@
+{% if page.pagination.total_pages > 1 %}
+    <ul class="pagination">
+		{% if page.pagination.previous_page %}
+			<li>
+                <a class="prev" href="{{ site.url }}{{ page.pagination.previous_page_url }}">
+                    &laquo; Newer
+                </a>
+            </li>
+		{% endif %}
+
+		{% if page.pagination.next_page %}
+			<li><a href="{{ site.url }}{{ page.pagination.next_page_url }}">Older &raquo;</a></li>
+		{% endif %}
+	</ul>
+{% endif %}

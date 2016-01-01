@@ -4,13 +4,12 @@
         {% include 'head.html' %}
     </head>
     <body>
-        <div id="wrap">
-            {% include 'nav.html' %}
-            <div class="container">
-                {% block content %}
-                    {{ page.content }}
-                {% endblock %}
-            </div>
+        {% include 'nav.html' %}
+
+        <div class="container spresso-wrap">
+            {% block content %}
+                {{ page.content }}
+            {% endblock %}
         </div>
             
         <footer id="footer">
@@ -33,12 +32,13 @@
                     Powered by <a href="http://spress.yosymfony.com">Spress</a>.
                 </p>
             </div>
+            
             <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
             <script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
             
             {% if site.code_highlight %}
-            <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-            <script>hljs.initHighlightingOnLoad();</script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
             {% endif %}
             
             {% block javascript %}{% endblock %}
