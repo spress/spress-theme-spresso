@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "yosymfony/spress-installer": "2.0.*"
+        "spress/spress-installer": "2.0.*"
     },
     "replace": {
         "yosymfony/spress-theme-spresso": "self.version"
