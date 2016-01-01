@@ -1,5 +1,5 @@
 {
-    "name": "yosymfony/spress-theme-spresso",
+    "name": "spress/spress-theme-spresso",
     "type": "spress-theme",
     "description": "Spresso theme for Spress",
     "keywords": ["spress", "theme", "template"],
@@ -13,6 +13,9 @@
     ],
     "require": {
         "yosymfony/spress-installer": "2.0.*"
+    },
+    "replace": {
+        "yosymfony/spress-theme-spresso": "self.version"
     },
     "extra": {
         "spress_name": "spresso",
