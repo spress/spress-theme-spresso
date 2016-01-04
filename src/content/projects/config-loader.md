@@ -20,7 +20,7 @@ Add the following to your `composer.json` and run `composer update`.
 
 ```json
 "require": {
-    "yosymfony/config-loader": "1.*@dev"
+    "yosymfony/config-loader": "1.3.*"
 }
 ```
 
