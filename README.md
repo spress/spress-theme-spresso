@@ -35,7 +35,7 @@ This theme is included with Spress.
 Spresso support top and bottom menus. To configure, you can edit
 `top_menu` and `bottom_menu` options from the `config.yml`:
 
-```
+```yaml
 top_menu:
     - { name: Home, url: / }
     - { name: About, url: /about }
@@ -57,7 +57,8 @@ It's free.
 
 By default, Disqus comments are enabled. If you want a post without comments, set
 the `comments` variable to `false` at the Front-matter of the post:
-```
+
+```yaml
 ---
 comments: false
 ---
