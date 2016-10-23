@@ -2,7 +2,7 @@
     "name": "spress/spress-theme-spresso",
     "type": "spress-theme",
     "description": "Spresso theme for Spress",
-    "keywords": ["spress", "theme", "template"],
+    "keywords": ["spress", "theme", "template", "bootstrap"],
     "license": "MIT",
     "authors": [
         {
@@ -12,15 +12,14 @@
         }
     ],
     "require": {
-        "spress/spress-installer": "2.0.*"
+        "spress/spress-installer": "~2.1@dev"
     },
     "replace": {
         "yosymfony/spress-theme-spresso": "self.version"
     },
     "extra": {
-        "spress_name": "spresso",
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "2.1.x-dev"
         }
     }
 }
