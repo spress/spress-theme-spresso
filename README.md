@@ -5,16 +5,36 @@ based on Bootstrap 3. The content is organized in one central column.
 
 See a [demo](http://yosymfony.github.io/Spress-example/).
 
+![Spresso theme preview](/screenshot.png)
+
 ## Installation
+You can create a [site based on Spresso](#creating-site) or install this one as
+a theme of a [pre-existing site](#pre-existing).
 
 **Requirements:**
 * Spress >= 2.2.0
 
-Performs the followinf command and Spresso theme will be
+### Creating a new site based on this theme {#creating-site}
+
+Performs the following command and Spresso theme will be
 installed in `mysite` folder:
 
 ```bash
 $ spress new:site mysite spress/spress-theme-spresso
+```
+
+### Install as a theme of pre-existing site {#pre-existing}
+
+Go to your site folder and performs the following command:
+
+```bash
+$ spress add:plugin spress/spress-theme-spresso
+```
+And add this line to the `config.yml` file of your site:
+
+```yaml
+themes:
+    name: spress/spress-theme-spresso
 ```
 
 ### Features:
