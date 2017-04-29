@@ -1,12 +1,21 @@
 ## Spresso theme
 
-Spresso is a simple theme for **[Spress 2.0](http://spress.yosymfony.com)**
+Spresso is a simple theme for **[Spress](http://spress.yosymfony.com)**
 based on Bootstrap 3. The content is organized in one central column.
-Spresso is the basic theme for Spress.
 
 See a [demo](http://yosymfony.github.io/Spress-example/).
 
-**This theme requires Spress >= 2.2**. If you are using Spress 1.x, go to [1.1.1](https://github.com/yosymfony/Spress-theme-spresso/releases/tag/v1.1.1) version of the theme.
+## Installation
+
+**Requirements:**
+* Spress >= 2.2.0
+
+Performs the followinf command and Spresso theme will be
+installed in `mysite` folder:
+
+```bash
+$ spress new:site mysite spress/spress-theme-spresso
+```
 
 ### Features:
 
