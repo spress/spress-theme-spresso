@@ -8,8 +8,8 @@ See a [demo](http://yosymfony.github.io/Spress-example/).
 ![Spresso theme preview](/screenshot.png)
 
 ## Installation
-You can create a [site based on Spresso](#creating-site) or install this one as
-a theme of a [pre-existing site](#pre-existing).
+You can create a [site based on Spresso](/#creating-site) or install this one as
+a theme of a [pre-existing site](/#pre-existing).
 
 **Requirements:**
 * Spress >= 2.2.0
