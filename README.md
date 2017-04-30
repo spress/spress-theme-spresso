@@ -14,7 +14,7 @@ or install this one as a theme of a [pre-existing site](#install-as-a-theme-of-p
 **Requirements:**
 * Spress >= 2.2.0
 
-### Creating a new site based on this theme {#creating-site}
+### Creating a new site based on this theme
 
 Performs the following command and Spresso theme will be
 installed in `mysite` folder:
@@ -23,7 +23,7 @@ installed in `mysite` folder:
 $ spress new:site mysite spress/spress-theme-spresso
 ```
 
-### Install as a theme of pre-existing site {#pre-existing}
+### Install as a theme of an pre-existing site
 
 Go to your site folder and performs the following command:
 
@@ -35,6 +35,14 @@ And add this line to the `config.yml` file of your site:
 ```yaml
 themes:
     name: spress/spress-theme-spresso
+```
+
+### How to update?
+
+You can get the latest version of Spresso theme with just run the following command:
+
+```bash
+$ spress update:plugin
 ```
 
 ### Features:
@@ -49,15 +57,10 @@ themes:
 * Iconic font by [Fort Awesome](http://fortawesome.github.io/Font-Awesome).
 * Sitemap and RSS feed.
 
-### How to install?
-
-This theme is included with Spress.
-
 ### How to use?
 
-**Create a new site**:
-
-`$ spress new:site /your-site-dir spresso`
+This theme has support for [Spress themes](http://spress.yosymfony.com/docs/themes/).
+This feature is new in version 2.2.0
 
 #### Menus
 
@@ -78,17 +81,29 @@ bottom_menu:
 
 #### Comments
 
-Comments are powered by [Disqus](disqus.com) and it need your
+Comments are powered by [Disqus](disqus.com). This feature needs a
 **disqus shortname**. To get it, you need create a account at this service.
-It's free.
+It's free. You can find out more about Disqus' shortnames
+[here](https://help.disqus.com/customer/portal/articles/466208).
 
-##### Disable comments
+To enable it, set to `true` the option `enabled` and set your disqus shortname
+in the `config.yml` of your site:
 
-By default, Disqus comments are enabled. If you want a post without comments, set
-the `comments` variable to `false` at the Front-matter of the post:
+```yaml
+# Comments in posts
+comments:
+    enabled: false
+    disqus_shortname: ""
+```
+
+##### Disable comments in a post
+
+If you want to publish a post without comments, set the `comments` variable to
+`false` at the Front-matter of the post:
 
 ```yaml
 ---
 comments: false
 ---
+The content of my post.
 ```
