@@ -3,9 +3,21 @@
 Spresso is a simple theme for **[Spress](http://spress.yosymfony.com)**
 based on Bootstrap 3. The content is organized in one central column.
 
-See a [demo](http://yosymfony.github.io/Spress-example/).
-
 ![Spresso theme preview](/screenshot.png)
+
+### Features:
+
+* Responsive design: Supports mobile and tablets.
+* Disqus comments on your posts.
+* Support for [Twitter Cards](https://dev.twitter.com/docs/cards) and [Facebook Open Graph](https://developers.facebook.com/docs/opengraph/).
+* Top and bottom menu.
+* Social network links in the footer.
+* Support for Google and Bing site validation.
+* Code snippet highlighting with [Highlight.js](http://highlightjs.org/)
+* Iconic font by [Fort Awesome](http://fortawesome.github.io/Font-Awesome).
+* Sitemap and RSS feed.
+
+See a live [demo](http://yosymfony.github.io/Spress-example/)!
 
 ## Installation
 You can create a [site based on Spresso](#creating-a-new-site-based-on-this-theme-creating-site)
@@ -16,8 +28,7 @@ or install this one as a theme of a [pre-existing site](#install-as-a-theme-of-p
 
 ### Creating a new site based on this theme
 
-Performs the following command and Spresso theme will be
-installed in `mysite` folder:
+Perform the following command and the Spresso theme will be installed in `mysite` folder:
 
 ```bash
 $ spress new:site mysite spress/spress-theme-spresso
@@ -25,46 +36,34 @@ $ spress new:site mysite spress/spress-theme-spresso
 
 ### Install as a theme of an pre-existing site
 
-Go to your site folder and performs the following command:
+Go to your site folder and input the following command:
 
 ```bash
 $ spress add:plugin spress/spress-theme-spresso
 ```
-And add this line to the `config.yml` file of your site:
+Then, add the following line to the `config.yml` file of your site:
 
 ```yaml
 themes:
     name: spress/spress-theme-spresso
 ```
 
-### How to update?
+### Updating the theme
 
-You can get the latest version of Spresso theme with just run the following command:
+You can get the latest version of the Spresso theme by running the following command:
 
 ```bash
 $ spress update:plugin
 ```
 
-### Features:
-
-* Responsive design: Support to mobile and tablets.
-* Disqus comments on your posts.
-* Support to [Twitter Cards](https://dev.twitter.com/docs/cards) and [Facebook Open Graph](https://developers.facebook.com/docs/opengraph/).
-* Top and bottom menu.
-* Social networks link at the footer.
-* Support to Google and Bing site validation.
-* Code snippets highlight.
-* Iconic font by [Fort Awesome](http://fortawesome.github.io/Font-Awesome).
-* Sitemap and RSS feed.
-
-### How to use?
+### Using the theme
 
 This theme has support for [Spress themes](http://spress.yosymfony.com/docs/themes/).
 This feature is new in version 2.2.0
 
 #### Menus
 
-Spresso support top and bottom menus. To configure, you can edit
+The Spresso theme supports both top and bottom menus. To configure, you can edit the
 `top_menu` and `bottom_menu` options from the `config.yml`:
 
 ```yaml
@@ -82,12 +81,14 @@ bottom_menu:
 #### Comments
 
 Comments are powered by [Disqus](disqus.com). This feature needs a
-**disqus shortname**. To get it, you need create a account at this service.
+**disqus shortname**. To get it, you need to create a account at this service.
 It's free. You can find out more about Disqus' shortnames
 [here](https://help.disqus.com/customer/portal/articles/466208).
 
-To enable it, set to `true` the option `enabled` and set your disqus shortname
-in the `config.yml` of your site:
+
+To enable comments, edit the `config.yml` of your site. 
+Set the `enabled` option to `true`  and set your disqus shortname.
+
 
 ```yaml
 # Comments in posts
