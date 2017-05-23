@@ -13,14 +13,14 @@ A PHP parser for TOML compatible with TOML v0.4.0.
 
 ### Installation
 
-Use [Composer](http://getcomposer.org/) to install Yosyfmony Toml package:
+Use [Composer](http://getcomposer.org/) to install the Yosyfmony Toml package:
 
-Add the following to your `composer.json` and run `composer update`.
+Add the following to your `composer.json` file and run `composer update`.
 
-```json
+```
 "require": {
     "yosymfony/toml": "0.3.*"
 }
 ```
 
-More informations about the package on [Packagist](https://packagist.org/packages/yosymfony/toml).
+More information about the package can be found on [Packagist](https://packagist.org/packages/yosymfony/toml).
