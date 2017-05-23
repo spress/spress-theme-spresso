@@ -1,6 +1,6 @@
 ---
 layout: "page"
-title: "Welcome Spresso theme"
+title: "Welcome to the Spresso theme!"
 list_mode: false
 
 generator: "pagination"
@@ -16,7 +16,7 @@ sort_by: "date"
     {% include "posts-list.html" with { posts: site.posts } %}
 
     {% if site.posts | length < 1 %}
-        <p>Until now, there is no posts. :(</p>
+        <p>There are no posts yet. :(</p>
     {% endif %}
 {% else %}
     {% for post in page.pagination.items %}
@@ -25,7 +25,7 @@ sort_by: "date"
         <div class="page-header">
           <h1>Welcome <small>to the blog</small></h1>
         </div>
-        <p>Until now, there is no posts. :(</p>
+        <p>There are no posts yet. :(</p>
     {% endfor %}
 {% endif %}
 
