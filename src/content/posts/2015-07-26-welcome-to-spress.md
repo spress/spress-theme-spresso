@@ -4,8 +4,8 @@ title: "Welcome to Spress"
 categories: []
 tags: ["sample post", "posts"]
 ---
-To create a new post, simply runs `spress new:post` command or adds a file
-in the `./src/content/posts` folder that follows the convention `YYYY-MM-DD-name-of-post.md`.
+To create a new post, simply run the `spress new:post` command or add a file
+to the `./src/content/posts` folder that follows the convention `YYYY-MM-DD-name-of-post.md`.
 
 More information about Spress:
 
