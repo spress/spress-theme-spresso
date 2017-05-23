@@ -1,5 +1,5 @@
 title: "Welcome to Spress"
-description: "A site creted by Spress"
+description: "A site created by Spress"
 logo: "spresso-logo.png"
 
 # Your site's domain. E.g: http://yoursite.com
@@ -55,4 +55,4 @@ top_menu:
     - { name: Projects, url: "/projects" }
 
 bottom_menu:
-    - { name: "Go to Spresso theme web", url: "https://github.com/yosymfony/Spress-theme-spresso" }
+    - { name: "Go to the Spresso theme webpage", url: "https://github.com/yosymfony/Spress-theme-spresso" }

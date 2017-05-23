@@ -62,11 +62,11 @@ HTML and <abbr title="cascading stylesheets">CSS</abbr> are our tools. Mauris a 
 Syntax highlighting via [Highlight.js](http://highlightjs.org/):
 
     <div id="awesome">
-        <p>This is great isn't it?</p>
+        <p>This is great, isn't it?</p>
     </div>
 
 ## Buttons
 
-Make any link standout more when applying the `.btn` and `.btn-default` classes.
+Make any link stand out by applying the `.btn` and `.btn-default` classes.
 
 <div><a href="#" class="btn btn-default">This is a button</a></div>
