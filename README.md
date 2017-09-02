@@ -17,8 +17,6 @@ based on Bootstrap 3. The content is organized in one central column.
 * Iconic font by [Fort Awesome](http://fortawesome.github.io/Font-Awesome).
 * Sitemap and RSS feed.
 
-See a live [demo](http://yosymfony.github.io/Spress-example/)!
-
 ## Installation
 You can create a [site based on Spresso](#creating-a-new-site-based-on-this-theme-creating-site)
 or install this one as a theme of a [pre-existing site](#install-as-a-theme-of-pre-existing-site-pre-existing).
